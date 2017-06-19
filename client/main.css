@@ -1,0 +1,23 @@
+/* CSS declarations go here */
+.navbar-default .navbar-brand {
+    color: #fc8019;
+}
+.order{
+  color: #fc8019;
+}
+.jumbotron{
+  min-height: 600px;
+  background-image: url('/images/cel-lisboa-60315.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.icons{
+  position: absolute;
+  margin-top: -5px;
+  margin-left: 120px;
+}
+.text{
+  position: relative;
+  margin-top: 95px;
+  margin-left: 100px;
+}
