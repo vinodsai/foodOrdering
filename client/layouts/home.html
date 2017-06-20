@@ -3,8 +3,11 @@
       <div class="container">
         <a href="#" class='navbar-brand'>Lucus Cafe</a>
         <ul class='nav navbar-nav navbar-right'>
-          <li><a href="">{{> loginButtons}}</a></li>
-          <li><a href=""><span class="order">Place Your Order</span></a></li>
+          <li class='log-in'>{{> loginButtons}}</li>
+          {{#if isInRole 'admin'}}
+            <li><a href=""><span class="order">Dashboard</span></a></li>
+          {{/if}}
+          <li><a href={{pathFor 'order'}}><span class="order">Place Your Order</span></a></li>
         </ul>
       </div>
     </nav>

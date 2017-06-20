@@ -5,11 +5,28 @@
 .order{
   color: #fc8019;
 }
+.heading{
+  color: #fc8019;
+}
 .jumbotron{
   min-height: 600px;
   background-image: url('/images/cel-lisboa-60315.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+}
+.dropdown {
+    position: relative;
+    margin-top: 13px;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #fc8019;
+    border-color: #fc8019;
+}
+.btn-primary:hover {
+    color: black;
+    background-color: grey;
+    border-color: grey;
 }
 .icons{
   position: absolute;
@@ -20,4 +37,40 @@
   position: relative;
   margin-top: 95px;
   margin-left: 100px;
+}
+.menu-body {
+  max-width: 600px;
+  margin: 30px auto;
+  display: block;
+  color: rgb(92, 92, 92);
+}
+
+.menu-section {
+  margin-bottom: 8px;
+}
+
+.menu-section-title {
+  font-style: italic;
+  font-size: 30px;
+  display: block;
+  font-weight:normal;
+  margin: 20px 0;
+  text-align: Center;
+}
+
+.menu-item {
+  margin: 35px 0;
+  font-size: 18px;
+}
+
+.menu-item-name{
+  font-family: helvetica;
+  font-weight: bold;
+  border-bottom: 2px dotted rgb(213, 213, 213);
+}
+.menu-item-price{
+  float: right;
+  font-weight: bold;
+  font-family: arial;
+  margin-top: -22px;
 }
