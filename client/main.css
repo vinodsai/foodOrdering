@@ -18,7 +18,7 @@
     position: relative;
     margin-top: 13px;
 }
-.btn-primary {
+/*.btn-primary {
     color: #fff;
     background-color: #fc8019;
     border-color: #fc8019;
@@ -27,7 +27,7 @@
     color: black;
     background-color: grey;
     border-color: grey;
-}
+}*/
 .icons{
   position: absolute;
   margin-top: -5px;
@@ -39,7 +39,7 @@
   margin-left: 100px;
 }
 .menu-body {
-  max-width: 600px;
+  max-width: 500px;
   margin: 30px auto;
   display: block;
   color: rgb(92, 92, 92);
@@ -73,4 +73,65 @@
   font-weight: bold;
   font-family: arial;
   margin-top: -22px;
+}
+.form{
+  width: 400px;
+  overflow: hidden;
+}
+.quantity{
+  width: 60px;
+}
+/*.checkout{
+  border-top-color: : #fc8019;
+}*/
+/*.order-button{
+  color: #fff;
+  background-color: #fc8019 !important;
+  border-color: #fc8019 !important;
+  margin-left: 80px;
+}
+.order-button:hover{
+  color: #fff;
+  background-color: #fc8019;
+  border-color: #fc8019;
+}*/
+.add-items{
+  position: relative;
+  margin-top: 5px;
+  margin-left: 180px;
+}
+.foodSelector-container {
+    width: 280px;
+}
+.go-right {
+    position: relative;
+    margin-left: 70px;
+}
+.selector-name{
+  position: relative;
+  margin-top: 25px;
+}
+/*.btn-primary {
+    color: #fff;
+    background-color: #fc8019;
+    border-color: #fc8019;
+    margin-left: 150px;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #fc8019;
+    border-color: #fc8019;
+}
+.btn-primary:focus {
+    color: #fff;
+    background-color: #fc8019;
+    border-color: #fc8019;
+}*/
+.datetimepicker {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+    margin-top: 20px;
+    margin-left: 90px;
+    margin-right: -25px;
 }

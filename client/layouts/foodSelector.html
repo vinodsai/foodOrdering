@@ -1,0 +1,37 @@
+<template name="foodSelector">
+  <h4 class='heading'>Select Your Food</h4>
+  <div class="form-group">
+    <label for="name" class="col-sm-2 control-label">Name</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="inputName" placeholder="Your Name">
+    </div>
+  </div>
+  <div class="foodSelector-container">
+    <label for="name" class="col-sm-2 control-label selector-name">Coffee</label>
+    <select class="form-control go-right" id='coffee-select'>
+      <option disabled selected value> -- Select An Item -- </option>
+      <option>Americano</option>
+      <option>Cafe Mocha</option>
+      <option>Cappucino</option>
+    </select>
+    <label for="name" class="col-sm-2 control-label selector-name">Snacks</label>
+    <select class="form-control go-right" id='snacks-select'>
+      <option disabled selected value> -- Select An Item -- </option>
+      <option>Veg Sandwich</option>
+      <option>Chicken Sandwich</option>
+      <option>Paneer Sandwich</option>
+    </select>
+    <label for="name" class="col-sm-2 control-label selector-name">Desserts</label>
+    <select class="form-control go-right" id='desserts-select'>
+      <option disabled selected value> -- Select An Item -- </option>
+      <option>Oreo Cheese Cake</option>
+      <option>Bluberry Mousse Cake</option>
+      <option>Belgium Chocolate Truffle</option>
+    </select>
+    <div class="input-group datetimepicker">
+      <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+      <input class="set-due-date form-control" type="text"/>
+    </div>
+  </div><br>
+  <button class="btn btn-primary" id='select-food'>Add to Cart</button>
+</template>
