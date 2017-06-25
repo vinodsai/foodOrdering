@@ -1,6 +1,16 @@
+Template.foodOrder.onRendered(function() {
+  Meteor.subscribe('Orders');
+})
+
+
 Template.foodOrder.events({
   'click #order':function(){
-    alert('Order is placed');
+    var name = Session.get('name');
+    var coffee = Session.get('coffeeName');
+    var snacks = Session.get('snacksName');
+    var desserts = Session.get('dessertsName');
+    var time = Session.get('time');
+    Meteor.call('addOrder', name,coffee,snacks,desserts,time)
   }
 })
 Template.foodOrder.helpers({
@@ -8,16 +18,16 @@ Template.foodOrder.helpers({
     return Session.get('name');
   },
   coffee: function(){
-    return Session.get('coffeeName')
+    return Session.get('coffeeName');
   },
   snacks: function(){
-    return Session.get('snacksName')
+    return Session.get('snacksName');
   },
   desserts: function(){
-    return Session.get('dessertsName')
+    return Session.get('dessertsName');
   },
   time: function(){
-    return Session.get('time')
+    return Session.get('time');
   }
   // total: function(){
   //   if(Session.get('coffeeName')===Cappucino){

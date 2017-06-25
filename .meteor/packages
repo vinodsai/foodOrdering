@@ -23,9 +23,8 @@ ian:accounts-ui-bootstrap-3
 accounts-password
 alanning:roles
 meteortoys:allthings
-autopublish
-insecure
 kadira:flow-router
 iron:router@1.0.13
 session
 tsega:bootstrap3-datetimepicker
+insecure

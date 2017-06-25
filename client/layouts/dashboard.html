@@ -1,0 +1,48 @@
+<template name="dashboard">
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <a href={{pathFor 'home'}} class='navbar-brand'>Lucus Cafe</a>
+    </div>
+  </nav>
+  <div class="container">
+    <!-- <h4>Total Orders: {{ordersCount}}</h4> -->
+    <div class="row">
+      <div class="col-lg-6">
+        <h4>Total Orders: {{ordersCount}}</h4>
+      </div>
+      <div class="col-lg-6">
+        <h4>Completed Orders: {{completedOrdersCount}}</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        {{#each eachOrder}}
+        <div class="panel panel-order">
+          <div class="panel-heading">
+            <h5>{{name}}</h5>
+            <h5>{{coffee}}</h5>
+            <h5>{{snacks}}</h5>
+            <h5>{{desserts}}</h5>
+            <h5>{{time}}</h5>
+            <button class='btn btn-info' id='finishedOrder'>Finished</button>
+          </div>
+        </div>
+        {{/each}}
+      </div>
+      <div class="col-lg-6">
+          {{#each finishedOrder}}
+          <div class="panel panel-order">
+            <div class="panel-heading">
+              <h5>{{name}}</h5>
+              <h5>{{coffee}}</h5>
+              <h5>{{snacks}}</h5>
+              <h5>{{desserts}}</h5>
+              <h5>{{time}}</h5>
+              <button class='btn btn-info' id='clearFinishedOrder'>Clear</button>
+            </div>
+          </div>
+          {{/each}}
+      </div>
+    </div>
+  </div>
+</template>

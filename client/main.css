@@ -8,6 +8,9 @@
 .heading{
   color: #fc8019;
 }
+.dashboardCss{
+  background-image: none;
+}
 .jumbotron{
   min-height: 600px;
   background-image: url('/images/cel-lisboa-60315.jpg');
@@ -134,4 +137,7 @@
     margin-top: 20px;
     margin-left: 90px;
     margin-right: -25px;
+}
+.panel-order{
+  background-color: #fc8019;
 }

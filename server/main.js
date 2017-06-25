@@ -1,5 +1,11 @@
 import { Meteor } from 'meteor/meteor';
 
 Meteor.startup(() => {
-  // code to run on server at startup
+
+});
+Meteor.publish("Orders", function () {
+  return Orders.find();
+});
+Meteor.publish("finishedOrders", function () {
+  return FinishedOrders.find();
 });
