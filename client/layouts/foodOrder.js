@@ -1,11 +1,18 @@
 Template.foodOrder.onRendered(function() {
   Meteor.subscribe('Orders');
+  Meteor.subscribe('profileOrders');
+  Session.set('name', '');
+  Session.set('coffeeName', '');
+  Session.set('snacksName', '');
+  Session.set('dessertsName', '');
+  Session.set('time', '');
 })
 
 
 Template.foodOrder.events({
   'click #order':function(){
     var name = Session.get('name');
+    var name = name.toUpperCase();
     var coffee = Session.get('coffeeName');
     var snacks = Session.get('snacksName');
     var desserts = Session.get('dessertsName');

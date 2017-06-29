@@ -11,7 +11,7 @@
 .dashboardCss{
   background-image: none;
 }
-.jumbotron{
+.homeImage{
   min-height: 600px;
   background-image: url('/images/cel-lisboa-60315.jpg');
   background-repeat: no-repeat;
@@ -140,4 +140,17 @@
 }
 .panel-order{
   background-color: #fc8019;
+  border: #fc8019;
+}
+.panel-order:hover {
+  background-color: #fc8019;
+  border: #fc8019;
+}
+#order {
+  background-color: #fc8019;
+  border: #fc8019;
+}
+#select-food {
+  background-color: #fc8019;
+  border: #fc8019;
 }

@@ -2,43 +2,46 @@
   <nav class="navbar navbar-default">
     <div class="container">
       <a href={{pathFor 'home'}} class='navbar-brand'>Lucus Cafe</a>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="">Messages</a></li>
+      </ul>
     </div>
   </nav>
   <div class="container">
     <!-- <h4>Total Orders: {{ordersCount}}</h4> -->
     <div class="row">
       <div class="col-lg-6">
-        <h4>Total Orders: {{ordersCount}}</h4>
+        <h5>Total Orders: {{ordersCount}}</h5>
       </div>
       <div class="col-lg-6">
-        <h4>Completed Orders: {{completedOrdersCount}}</h4>
+        <h5>Completed Orders: {{completedOrdersCount}}</h5>
       </div>
     </div>
     <div class="row">
       <div class="col-lg-6">
         {{#each eachOrder}}
-        <div class="panel panel-order">
+        <div class="panel panel-default">
           <div class="panel-heading">
             <h5>{{name}}</h5>
             <h5>{{coffee}}</h5>
             <h5>{{snacks}}</h5>
             <h5>{{desserts}}</h5>
             <h5>{{time}}</h5>
-            <button class='btn btn-info' id='finishedOrder'>Finished</button>
+            <button class='btn btn-info btn-sm panel-order' id='finishedOrder'>Finished</button>
           </div>
         </div>
         {{/each}}
       </div>
       <div class="col-lg-6">
           {{#each finishedOrder}}
-          <div class="panel panel-order">
+          <div class="panel panel-default">
             <div class="panel-heading">
               <h5>{{name}}</h5>
               <h5>{{coffee}}</h5>
               <h5>{{snacks}}</h5>
               <h5>{{desserts}}</h5>
               <h5>{{time}}</h5>
-              <button class='btn btn-info' id='clearFinishedOrder'>Clear</button>
+              <button class='btn btn-info btn-sm panel-order' id='clearFinishedOrder'>Clear</button>
             </div>
           </div>
           {{/each}}

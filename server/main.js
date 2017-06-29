@@ -9,3 +9,9 @@ Meteor.publish("Orders", function () {
 Meteor.publish("finishedOrders", function () {
   return FinishedOrders.find();
 });
+Meteor.publish("profileOrders", function () {
+  return ProfileOrders.find();
+});
+Meteor.publish("favouriteOrders", function () {
+  return FavouriteOrders.find();
+});
