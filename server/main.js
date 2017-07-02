@@ -15,3 +15,6 @@ Meteor.publish("profileOrders", function () {
 Meteor.publish("favouriteOrders", function () {
   return FavouriteOrders.find();
 });
+Meteor.publish("feedbacks", function () {
+  return Feedback.find();
+});

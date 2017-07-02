@@ -1,0 +1,15 @@
+<template name="feedback">
+  {{> sAlert}}
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <a href={{pathFor 'home'}} class='navbar-brand'>Lucus Cafe</a>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="form-group">
+      <label for="comment">Comment:</label>
+      <textarea class="form-control" rows="10" id="comment"></textarea>
+    </div>
+    <button type="button" class="btn btn-default" id='sendFeedback'><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+  </div>
+</template>

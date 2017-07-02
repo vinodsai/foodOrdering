@@ -154,3 +154,21 @@
   background-color: #fc8019;
   border: #fc8019;
 }
+#comment:focus {
+  border-color: #fc8019;
+}
+#sendFeedback {
+  color: #fc8019;
+  border-color: #fc8019
+}
+#sendFeedback:focus {
+  color: black;
+  border-color: #fc8019
+}
+.nav-pills > li > a {
+    border-radius: 4px;
+    color: #fc8019;
+}
+#messageCount{
+  color: #fc8019;
+}
