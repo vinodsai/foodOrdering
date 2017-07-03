@@ -18,3 +18,6 @@ Meteor.publish("favouriteOrders", function () {
 Meteor.publish("feedbacks", function () {
   return Feedback.find();
 });
+Meteor.publish('users', function () { 
+  return Meteor.users.find();
+});

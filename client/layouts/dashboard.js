@@ -1,6 +1,7 @@
 Template.dashboard.onRendered(function() {
   Meteor.subscribe('Orders');
   Meteor.subscribe('finishedOrders');
+  Meteor.subscribe('users');
 })
 
 Template.dashboard.helpers({
@@ -15,6 +16,9 @@ Template.dashboard.helpers({
   },
   completedOrdersCount: function(){
     return FinishedOrders.find().count();
+  },
+  totalUsers: function(){
+    return Meteor.users.find().count();
   }
 })
 

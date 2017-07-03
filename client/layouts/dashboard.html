@@ -3,22 +3,25 @@
     <div class="container">
       <a href={{pathFor 'home'}} class='navbar-brand'>Lucus Cafe</a>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="">Messages</a></li>
+        <li><a href={{pathFor 'message'}}>Messages</a></li>
       </ul>
     </div>
   </nav>
   <div class="container">
     <!-- <h4>Total Orders: {{ordersCount}}</h4> -->
     <div class="row">
-      <div class="col-lg-6">
+      <div class="col-lg-5">
         <h5>Total Orders: {{ordersCount}}</h5>
       </div>
-      <div class="col-lg-6">
+      <div class="col-lg-5">
         <h5>Completed Orders: {{completedOrdersCount}}</h5>
+      </div>
+      <div class="col-lg-2">
+        <h5>Information</h5>
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-6">
+      <div class="col-lg-5">
         {{#each eachOrder}}
         <div class="panel panel-default">
           <div class="panel-heading">
@@ -32,7 +35,7 @@
         </div>
         {{/each}}
       </div>
-      <div class="col-lg-6">
+      <div class="col-lg-5">
           {{#each finishedOrder}}
           <div class="panel panel-default">
             <div class="panel-heading">
@@ -45,6 +48,9 @@
             </div>
           </div>
           {{/each}}
+      </div>
+      <div class="col-lg-2">
+          <h5>Users: <strong id='userCount'>{{totalUsers}}</strong></h5>
       </div>
     </div>
   </div>
